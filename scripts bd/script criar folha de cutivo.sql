@@ -51,7 +51,7 @@ ENGINE = InnoDB;
 -- Table `db_cria_peixe`.`ParametrosAgua`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `db_cria_peixe`.`ParametrosAgua` (
-  `idParametroAgua` INT NULL AUTO_INCREMENT COMMENT 'chave do registro Parâmetro da Água',
+  `idParametroAgua` INT NOT NULL AUTO_INCREMENT COMMENT 'chave do registro Parâmetro da Água',
   `nmParametroAgua` VARCHAR(100) NOT NULL COMMENT 'Parâmetro da égua a ser usado em um tanque de criação',
   `idUnidadesMedida` INT NOT NULL,
   PRIMARY KEY (`idParametroAgua`),
